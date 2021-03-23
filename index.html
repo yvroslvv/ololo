@@ -15,7 +15,7 @@
 <body>
     <div style=" width:50vw; height:50vh;" >
     <script>
-        let app = new PIXI.Application({width: window.innerWidth, height: window.innerHeight});
+        let app = new PIXI.Application({width: inherit, height:inherit});
         document.body.appendChild(app.view);
 
         let img = new PIXI.Sprite.from("mars-main.png");
