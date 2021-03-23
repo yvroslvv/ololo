@@ -22,6 +22,8 @@
         img.width = 500;
         img.height = 500;
         app.stage.addChild(img);
+        img.x = app.screen.width / 2;
+        imgy.y = app.screen.height / 2;
 
         depthMap = new PIXI.Sprite.from("u.png");
         app.stage.addChild(depthMap);
