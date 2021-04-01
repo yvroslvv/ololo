@@ -15,17 +15,17 @@
 <body style="background-color: black;">
     <div style=" width:50vw; height:50vh;">
     <script>
-        let app = new PIXI.Application({width: 600, height:600});
+        let app = new PIXI.Application({width: 674, height:552});
         document.body.appendChild(app.view);
 
-        let img = new PIXI.Sprite.from("Frame 25.png");
-        img.width = 500;
-        img.height = 500;
+        let img = new PIXI.Sprite.from("morpheus.png");
+        img.width = 674;
+        img.height = 552;
         app.stage.addChild(img);
 
-        depthMap = new PIXI.Sprite.from("u.png");
+        depthMap = new PIXI.Sprite.from("depth.png");
         app.stage.addChild(depthMap);
-
+        
         displacementFilter = new PIXI.filters.DisplacementFilter(depthMap);
         app.stage.filters = [displacementFilter];
 
